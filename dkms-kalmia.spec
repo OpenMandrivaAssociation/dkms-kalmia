@@ -8,7 +8,7 @@ Group:		System/Configuration/Hardware
 License:	GPLv2+
 URL:		https://github.com/mkotsbak/Samsung-GT-B3730-linux-driver
 Source0:	%{modname}-%{version}.tar.xz
-CVSID:		796fd38b68167f527980ed75a5cbfe0d802d4ece
+#CVSID:		796fd38b68167f527980ed75a5cbfe0d802d4ece
 Requires(post):	dkms
 Requires(preun):dkms
 BuildArch:	noarch
