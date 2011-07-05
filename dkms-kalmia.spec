@@ -1,8 +1,8 @@
 %define	modname	kalmia
 
 Name:		dkms-%{modname}
-Version:	0.1
-Release:	2
+Version:	0.2
+Release:	1
 Summary:	Driver for Kalmia-based 4G/LTE modems
 Group:		System/Configuration/Hardware
 License:	GPLv2+
@@ -26,7 +26,7 @@ chipset, ie. such as Samsung's GT-B3710 & GT-B3730.
 %install
 install -d %{buildroot}%{_docdir}/%{modname}
 install -m644 README *.txt %{buildroot}%{_docdir}/%{modname}
-install -m755 chat.sh connect_lte.sh %{buildroot}%{_docdir}/%{modname}
+install -m755 chat.sh connect_lte.sh connect_nonlte.sh %{buildroot}%{_docdir}/%{modname}
 
 # DKMS stuff
 install -d %{buildroot}%{_usrsrc}/%{modname}-%{version}
