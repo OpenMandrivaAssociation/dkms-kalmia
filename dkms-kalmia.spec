@@ -2,7 +2,7 @@
 
 Name:		dkms-%{modname}
 Version:	0.1
-Release:	1
+Release:	2
 Summary:	Driver for Kalmia-based 4G/LTE modems
 Group:		System/Configuration/Hardware
 License:	GPLv2+
@@ -12,6 +12,7 @@ Source0:	%{modname}-%{version}.tar.xz
 Requires(post):	dkms
 Requires(preun):dkms
 BuildArch:	noarch
+Suggests:	minicom
 
 %description
 This package provides the kernel driver for 4G/LTE modems using the Kalmia
