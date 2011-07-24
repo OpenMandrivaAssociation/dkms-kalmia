@@ -13,6 +13,7 @@ Requires(post):	dkms
 Requires(preun):dkms
 BuildArch:	noarch
 Suggests:	minicom
+Suggests:	usb_modeswitch
 
 %description
 This package provides the kernel driver for 4G/LTE modems using the Kalmia
