@@ -13,7 +13,6 @@ Requires(post):	dkms
 Requires(preun):dkms
 BuildArch:	noarch
 Suggests:	minicom
-Suggests:	usb_modeswitch
 
 %description
 This package provides the kernel driver for 4G/LTE modems using the Kalmia
@@ -57,3 +56,18 @@ dkms remove -m %{modname} -v %{version} --all --rpm_safe_upgrade || :
 %{_docdir}/%{modname}/*.sh
 %{_usrsrc}/%{modname}-%{version}
 
+
+
+%changelog
+* Tue Jul 05 2011 Per Øyvind Karlsen <peroyvind@mandriva.org> 0.2-1
++ Revision: 688833
+- update to newer code
+- add a suggests on minicom
+
+* Sun May 22 2011 Per Øyvind Karlsen <peroyvind@mandriva.org> 0.1-1
++ Revision: 677018
+- imported package dkms-kalmia
+
+
+* Sat May 21 2011 Per Øyvind Karlsen <peroyvind@mandriva.org> 0.1-1
+- initial release, based on git commit 796fd38b68167f527980ed75a5cbfe0d802d4ece
