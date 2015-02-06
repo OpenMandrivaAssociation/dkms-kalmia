@@ -2,7 +2,7 @@
 
 Name:		dkms-%{modname}
 Version:	0.2
-Release:	1
+Release:	2
 Summary:	Driver for Kalmia-based 4G/LTE modems
 Group:		System/Configuration/Hardware
 License:	GPLv2+
